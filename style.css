@@ -12,3 +12,61 @@
     font-family: metropolis;
     src: url(fonts/metropolis.otf);
 }
+
+:root {
+    --backgroundGray: #fdfdfd;
+    --lightBlack: #435d5f;
+    --showCaseBlack: #000000;
+    --white: #FFFFFF;
+    --emailOrange: #EA7F4A;
+}
+
+body {
+    background: var(--backgroundGray) url(images/map.png) no-repeat fixed center;
+    background-size: 800px;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-family: circular_std;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--lightBlack);
+}
+nav a:hover {
+    color: var(--showCaseBlack);
+}
+#navlist {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+#login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+}
+#request {
+    border: 1px solid var(--lightBlack);
+    border-radius: 7px;
+    padding: 0.5rem;
+}
+#request:hover {
+    background: var(--emailOrange);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+#center {
+    
+}
