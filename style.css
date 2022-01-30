@@ -1,0 +1,14 @@
+@font-face {
+    font-family: circular_std;
+    src: url(fonts/circular_std.ttf);
+}
+
+/* @font-face {
+    font-family: galano;
+    src: url(fonts/galano_grotesque.otf);
+} */
+
+@font-face {
+    font-family: metropolis;
+    src: url(fonts/metropolis.otf);
+}
