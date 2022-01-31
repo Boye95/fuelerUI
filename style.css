@@ -88,11 +88,27 @@ nav a:hover {
 }
 #center {
     margin-top: 8rem;
-    
 }
 #showcase {
     width: 80%;
     margin: 0 auto;
+    position: relative;
+}
+#showcase::before {
+    content: url("images/rocket__icon.png");
+    transform: scale(0.7);
+    position: absolute;
+    height: 100%;
+    top: 1.5rem;
+    left: -5rem
+}
+#showcase::after {
+    content: url("images/thunder__icon.png");
+    transform: scale(0.7);
+    position: absolute;
+    height: 100%;
+    top: 1.5rem;
+    right: -5rem
 }
 #showcase h1 {
     font-family: metropolis;
@@ -102,27 +118,48 @@ nav a:hover {
     margin: 0 auto;
 }
 .show img {
-    width: 1.8rem;
+    width: 2.4rem;
 }
 .work img {
     position: relative;
     left: -0.4rem;
-    top: -2rem;
+    top: -2.6rem;
 }
 .with {
     display: block;
     margin-top: 1rem;
 }
 .with img {
-    width: 2.6rem;
+    width: 3.1rem;
 }
 .show_description {
     font-family: circular_std;
     text-align: center;
     width: 80%;
-    margin: 2rem 5rem auto;
+    margin: 1.2rem auto;
 }
 .show_description .world {
     display: block;
     margin-top: 0.3rem;
+}
+@media screen and (max-width: 1080px) {
+    #showcase h1 {
+        font-size: 3rem;
+    }
+    .show img {
+        width: 1.8rem;
+    }
+    .work img {
+        position: relative;
+        left: -0.4rem;
+        top: -1.9rem;
+    }
+    .with img {
+        width: 2.5rem;
+    }
+    .show_description {
+        font-size: 0.85rem;
+    }
+}
+    
 }
