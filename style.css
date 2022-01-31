@@ -49,7 +49,26 @@ nav a:hover {
     justify-content: space-evenly;
     width: 40%;
 }
-
+.new_over_pricing {
+    position: relative;
+    background-color: var(--emailOrange);
+    color: var(--white);
+    font-size: 0.58rem;
+    border-radius: 4px;
+    padding: 0.2rem;
+    top: -1.5rem;
+    left: -1.7rem;
+}
+.new_over_pricing::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--emailOrange) transparent transparent transparent;
+}
 #login {
     display: flex;
     justify-content: flex-end;
