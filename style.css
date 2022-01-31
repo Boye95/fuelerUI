@@ -23,7 +23,7 @@
 
 body {
     background: var(--backgroundGray) url(images/map.png) no-repeat fixed center;
-    background-size: 800px;
+    /* background-size: ; */
 }
 
 nav {
@@ -96,7 +96,7 @@ nav a:hover {
 }
 #showcase h1 {
     font-family: metropolis;
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--showCaseBlack);
     text-align: center;
     margin: 0 auto;
@@ -115,4 +115,14 @@ nav a:hover {
 }
 .with img {
     width: 2.6rem;
+}
+.show_description {
+    font-family: circular_std;
+    text-align: center;
+    width: 80%;
+    margin: 2rem 5rem auto;
+}
+.show_description .world {
+    display: block;
+    margin-top: 0.3rem;
 }
