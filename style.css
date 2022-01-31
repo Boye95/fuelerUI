@@ -14,7 +14,7 @@
 }
 
 :root {
-    --backgroundGray: #fdfdfd;
+    --backgroundGray: #F3F1E5;
     --lightBlack: #435d5f;
     --showCaseBlack: #000000;
     --white: #FFFFFF;
@@ -96,7 +96,7 @@ nav a:hover {
 }
 #showcase::before {
     content: url("images/rocket__icon.png");
-    transform: scale(0.7);
+    transform: scale(1);
     position: absolute;
     height: 100%;
     top: 1.5rem;
@@ -104,7 +104,7 @@ nav a:hover {
 }
 #showcase::after {
     content: url("images/thunder__icon.png");
-    transform: scale(0.7);
+    transform: scale(1);
     position: absolute;
     height: 100%;
     top: 1.5rem;
@@ -143,6 +143,12 @@ nav a:hover {
     margin-top: 0.3rem;
 }
 @media screen and (max-width: 1080px) {
+    #showcase::before {
+        transform: scale(0.7);
+    }
+    #showcase::after {
+        transform: scale(0.7);
+    }
     #showcase h1 {
         font-size: 3rem;
     }
@@ -162,4 +168,44 @@ nav a:hover {
     }
 }
     
+#email_center {
+    margin-top: -5rem;
+    background: url(images/fueler-break__text.png) no-repeat center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7em;
+}
+#main_input {
+    display: flex;
+    background-color: var(--white);
+    height: 3rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: 0px 9px 35px -10px rgb(134, 113, 113, 0.4);
+}
+#main_input .email_box {
+    width: 60%;
+    height: 2.85rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-family: circular_std;
+    font-size: 1.1rem;
+}
+#main_input .email_box:focus {
+    outline: none;
+}
+::placeholder {
+    color: var(--showCaseBlack);
+}
+#main_input .request_btn {
+    width: 40%;
+    height: inherit;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--emailOrange);
+    color: var(--white);
+    font-family: circular_std;
+    font-size: 1.1rem;
 }
