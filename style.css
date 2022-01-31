@@ -212,3 +212,22 @@ nav a:hover {
 #main_input .request_btn:hover {
     background-color: #eb5910;
 }
+#trusted_main {
+    width: 80%;
+    margin: -2rem auto
+}
+#trusted_text {
+    text-align: center;
+    font-family: circular_std;
+    font-size: 1.05rem;
+}
+#trusted_logos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1.5rem auto;
+    width: 80%;
+}
+#trusted_logos a img {
+    width: 6.5rem;
+}
