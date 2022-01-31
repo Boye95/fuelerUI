@@ -209,3 +209,6 @@ nav a:hover {
     font-family: circular_std;
     font-size: 1.1rem;
 }
+#main_input .request_btn:hover {
+    background-color: #eb5910;
+}
