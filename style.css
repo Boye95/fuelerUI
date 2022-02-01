@@ -236,7 +236,7 @@ nav a:hover {
 }
 #footer {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 5rem auto;
     font-family: circular_std;
 }
@@ -259,7 +259,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 #icons {
     display: inline-flex;
